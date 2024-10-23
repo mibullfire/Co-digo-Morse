@@ -4,5 +4,6 @@ from colorama import Fore
 
 diccionario = generador_diccionarios(leer_abecedario('./data/abecedario.csv'), leer_numeros('./data/numeros.csv'))
 print(Fore.RED)
-#print(traductor('hola que haces', diccionario))
-print(diccionario)
+print(traductor('hola que haces', diccionario))
+#print(diccionario)
+print(traductor('23', diccionario))

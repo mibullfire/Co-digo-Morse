@@ -29,8 +29,8 @@ def traductor(texto:str, diccionario:dict)->str:
     res = []
     for letra in texto:
         for letra_dic in diccionario:
-            if letra == letra_dic.letra:
-                res.append(letra_dic.morse)
+            if letra == letra_dic:
+                res.append(diccionario[letra_dic]+'/')
                 break
         else:
             res.append(' ')
